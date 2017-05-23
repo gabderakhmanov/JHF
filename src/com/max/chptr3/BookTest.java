@@ -1,6 +1,6 @@
 package com.max.chptr3;
 
-public class BookTest {
+class BookTest {
 
     static class Books {
         String title;
@@ -9,28 +9,27 @@ public class BookTest {
 
     static class BookTestDrive{
         public static void main(String[] args) {
-            Books[] myBooks = new Books[2];
-            int x =0;
 
-            //need to create objects
-            myBooks[0] = new Books();
-            myBooks[1] = new Books();
+            Books[] book = new Books[2];
+
+            // err - need to create obj for each link
+            book[0] = new Books();
+            book[1] = new Books();
             //
 
-            myBooks[0].title = "BT1";
-            myBooks[0].author = "BA1";
+            book[0].title = "t0";
+            book[0].author = "a0";
 
-            myBooks[1].title = "BT2";
-            myBooks[1].author = "BA2";
+            book[1].title = "t1";
+            book[1].author = "a1";
 
-            while (x<myBooks.length){
-                System.out.println("title=" + myBooks[x].title);
-                System.out.println("author=" + myBooks[x].author);
+            int x=0;
+            while (x < book.length){
+                System.out.println("t=" + book[x].title);
+                System.out.println("a=" + book[x].author);
                 x++;
             }
-
         }
-
     }
 
 }
