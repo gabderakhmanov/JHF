@@ -1,8 +1,7 @@
 package com.glvch.l1;
 
-import com.com.test.A;
 
-public class IncrementDecrementTest extends A {
+public class IncrementDecrementTest {
 
     public static void main(String[] args) {
 
