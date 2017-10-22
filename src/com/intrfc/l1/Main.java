@@ -8,7 +8,7 @@ public class Main {
         System.out.println(sp.perimeter() + "|" + sp.square() );
 
         Shape sps = new Circle(22.9);
-        System.out.println(sps.perimeter() + "|" + sps.square());
+        System.out.println(sps.perimeter() + "|" + sps.square() + "|" + sps.type());
 
     }
 
