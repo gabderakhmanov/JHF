@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(StaticTest.sal() + "|"+ StaticTest.name + "|"+i);
+        System.out.println(StaticTest.sal() + "|"+ StaticTest.name + "|"+i + "|" + StaticTest.age);
 
     }
 
