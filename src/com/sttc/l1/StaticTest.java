@@ -10,8 +10,8 @@ public class StaticTest {
         name = "name";
     }
 
-    static double sal(){
-        return 2.0;
+    static double sal(int o){
+        return 2.0+o;
     }
 
     double sizeOf(){
