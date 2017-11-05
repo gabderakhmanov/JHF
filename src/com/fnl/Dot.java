@@ -2,7 +2,7 @@ package com.fnl;
 
 public class Dot {
 
-    private final int x;
+    private int x;
     private int y;
 
     public Dot(int x, int y) {
