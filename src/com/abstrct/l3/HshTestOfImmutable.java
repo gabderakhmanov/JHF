@@ -4,6 +4,11 @@ public class HshTestOfImmutable {
 
     public static void main(String[] args){
 
+        long tm;
+
+        tm = System.currentTimeMillis();
+        System.out.println(System.currentTimeMillis());
+
         HshTestOfImmutable hshTestOfImmutable = new HshTestOfImmutable();
         hshTestOfImmutable.strTest();
 
@@ -11,6 +16,8 @@ public class HshTestOfImmutable {
 
         hshTestOfImmutable.eqlTest();
 
+
+        System.out.println(System.currentTimeMillis()-tm +"|" +System.currentTimeMillis());
     }
 
 
@@ -38,11 +45,21 @@ public class HshTestOfImmutable {
 
     private void eqlTest(){
 
+        System.out.println("---------------");
+
         String str1 = new String("abc");
         String str2 = new String("abc");
 
         System.out.println(str1 == str2);
         System.out.println(str1.equals(str2));
+
+        String s1 = "qw";
+        String s2 = new String("qw").intern();
+
+        System.out.println("s1==s2"+ (s1==s2));
+        System.out.println("s1.equals(s2)"+s1.equals(s2));
+
+        System.out.println("---------------");
 
 
         Integer i = new Integer(5);
