@@ -7,7 +7,6 @@ public class HshTestOfImmutable {
         long tm;
 
         tm = System.currentTimeMillis();
-        System.out.println(System.currentTimeMillis());
 
         HshTestOfImmutable hshTestOfImmutable = new HshTestOfImmutable();
         hshTestOfImmutable.strTest();
@@ -17,7 +16,7 @@ public class HshTestOfImmutable {
         hshTestOfImmutable.eqlTest();
 
 
-        System.out.println(System.currentTimeMillis()-tm +"|" +System.currentTimeMillis());
+        System.out.println(System.currentTimeMillis()-tm);
     }
 
 
